@@ -5,3 +5,6 @@ https://validator.w3.org/
 White space collapsing - 
       When the browser comes across two or more spaces next to each other, it only displays one space. 
        Similarly if it comes across a line break, it treats that as a single space too.
+
+
+Tags that make the text seems to be in Italic- <i>, <em>, <cite>, <dfn>, <address>
