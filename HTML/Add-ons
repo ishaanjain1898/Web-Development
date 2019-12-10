@@ -27,3 +27,7 @@ Image Dimension: The image should be saved at the same width and height as requi
 
 Image Resolution: Images created for the web should be saved at a resolution of 72 ppi. 
 The higher the image resolution, the larger the size of the file.
+
+
+SVG: Scalable Vector Graphics are a relative new format used to display vector images directly on the web (eliminating 
+the need to create bitmap version of them), however its use is not yet widespread.
