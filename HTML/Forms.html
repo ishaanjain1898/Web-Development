@@ -6,14 +6,17 @@
 <body>
 	<form action="" method="">
 		<div>
-			<label for="name">Name</label>
-			<input type="" name="name" id="name">
+			<label for="name">User Name</label> 		<!--for: if you click on the label, it highlight the input element that label is for. Here value of for is id of desired input element -->
+			<input type="text" name="username" id="name" value="Username">		<!--value: to set a default value--> 
+			<input type="text" name="name" placeholder="LastName"> 		<!--placeholder: to give extra information to display inside input area-->
 		</div>
 		<div>
-			<label for="pass">Password</label>
-			<input type="" name="pass" id="pass">
+			<label>Password		<!--Insted of using for you can nest input element inside the label element-->
+			<input type="Password" name="pass" id="">
+			</label>
 		</div>
-		<button>Submit</button>
+		<button type="reset">Reset</button>
+		<button type="Submit">Submit</button>		<!--Here Submit type allows you to submit the form by hitting Enter key-->
 	</form>
 </body>
 </html>
