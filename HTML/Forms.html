@@ -4,7 +4,7 @@
 	<title>Forms</title>
 </head>
 <body>
-	<form action="" method="" enctype="multiple">
+	<form action="" method="" enctype="multiple/form-data">
 		<div>
 			<label for="name">User Name</label> 		<!--for: if you click on the label, it highlight the input element that label is for. Here value of for is id of desired input element -->
 			<input type="text" name="username" id="name" value="Username">		<!--value: to set a default value--> 
@@ -15,12 +15,36 @@
 			<input type="email" name="email" id="email">		<!--type="email" : it also suggest users to enter frequently used email address-->
 		</div>
 		<div>
+			<label>Password		<!--Insted of using for you can nest input element inside the label element-->
+			<input type="Password" name="pass" id="" required>
+			</label>
+		</div>
+		<div>
+			<input type="range" name="range" id="range" min="10" max="200" oninput="age.value=range.value">
+		</div>
+		<div>
 			<label for="age">Age</label>
 			<input type="number" name="age" id="age" min="0" max="100" step="5">
 		</div>
 		<div>
 			<label for="date">Birthday</label>
 			<input type="date" name="date" id="date" min="2019-12-16">
+		</div>
+		<div>
+			<label for="Time">Time</label>
+			<input type="time" name="Time" id="Time">
+		</div>
+		<div>
+			<label for="Week">Week</label>
+			<input type="week" name="week" id="week">
+		</div>
+		<div>
+			<label for="Month">Month</label>
+			<input type="Month" name="Month" id="Month">
+		</div>
+		<div>
+			<label for="dt">Time</label>
+			<input type="datetime-local" name="dt" id="dt">
 		</div>
 		<div>
 			Favorite Food
@@ -37,7 +61,7 @@
 			Gender
 			<div>
 				<label for="Male">Male</label>
-				<input type="radio" name="Gender" id="Male" value="Male">
+				<input type="radio" name="Gender" id="Male" value="Male" checked="">
 			</div>
 			<div>
 				<label for="">Female</label>
@@ -49,6 +73,10 @@
 			<select name="eyeColor" id="eyeColor">
 				<option value="Green">Green</option>
 				<option value="Red">Red</option>
+				<option value="Blue">Blue</option>
+				<option value="Black" selected="">Black</option>
+				<option value="Brown">Brown</option>
+			
 			</select>
 		</div>
 		<div>
@@ -57,16 +85,15 @@
 				<option value="Green">Green</option>
 				<option value="Red">Red</option>
 				<option value="Blue">Blue</option>
-				<option value="Black">Black</option>
+				<option value="Black" >Black</option>
 				<option value="Brown">Brown</option>
 			</select>
-			<input type="color" name="hairColor" id="color">
+			<div>
+				<input type="color" name="hairColor" id="color" oninput="result.value=color.value">
+				<input type="text" name="hairColor" id="result">
+			</div>
 		</div>
-		<div>
-			<label>Password		<!--Insted of using for you can nest input element inside the label element-->
-			<input type="Password" name="pass" id="" required>
-			</label>
-		</div>
+		
 		<div>
 			<label for="Bio">Bio</label>
 			<textarea id="Bio" name="Bio" placeholder="Write a brief of yourself"></textarea>
@@ -84,8 +111,10 @@
 			<label for="URL">URL</label>
 			<input type="url" name="URL" id="URL">
 		</div>
-		<button type="RESET">Reset</button>
-		<button type="Submit">Submit</button>		<!--Here Submit type allows you to submit the form by hitting Enter key-->
+		<button type="RESET" value="Make it reset">Reset entries</button>
+		<button type="Submit" value="Submit">Submit form</button>		<!--Here Submit type allows you to submit the form by hitting Enter key-->
+		<input type="button" name="Submit" value="Value=Submit">
+		<button onclick="alert('Thank You to fill this form')">Thank You</button>
 	</form>
 </body>
 </html>
