@@ -8,14 +8,83 @@
 		<div>
 			<label for="name">User Name</label> 		<!--for: if you click on the label, it highlight the input element that label is for. Here value of for is id of desired input element -->
 			<input type="text" name="username" id="name" value="Username">		<!--value: to set a default value--> 
-			<input type="text" name="name" placeholder="LastName"> 		<!--placeholder: to give extra information to display inside input area-->
+			<input type="text" name="name" placeholder="LastName" required> 		<!--placeholder: to give extra information to display inside input area-->
+		</div>
+		<div>
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email">		<!--type="email" : it also suggest users to enter frequently used email address-->
+		</div>
+		<div>
+			<label for="age">Age</label>
+			<input type="number" name="age" id="age" min="0" max="100" step="5">
+		</div>
+		<div>
+			<label for="date">Birthday</label>
+			<input type="date" name="date" id="date" min="2019-12-16">
+		</div>
+		<div>
+			Favorite Food
+			<div>
+				<label for="Banana">Banana</label>
+				<input type="checkbox" name="Banana" id="Banana">
+			</div>
+			<div>
+				<label for="Apple">Apple</label>
+				<input type="checkbox" name="Apple" id="Apple">
+			</div>
+		</div>
+		<div>
+			Gender
+			<div>
+				<label for="Male">Male</label>
+				<input type="radio" name="Gender" id="Male" value="Male">
+			</div>
+			<div>
+				<label for="">Female</label>
+				<input type="radio" name="Gender" id="Female" value="Female">
+			</div>
+		</div>
+		<div>
+			<label for="eyeColor">Eye Color</label>
+			<select name="eyeColor" id="eyeColor">
+				<option value="Green">Green</option>
+				<option value="Red">Red</option>
+			</select>
+		</div>
+		<div>
+			<label for="hairColor">Hair Color</label>
+			<select name="hairColor" id="hairColor" multiple>
+				<option value="Green">Green</option>
+				<option value="Red">Red</option>
+				<option value="Blue">Blue</option>
+				<option value="Black">Black</option>
+				<option value="Brown">Brown</option>
+			</select>
+			<input type="color" name="hairColor" id="color">
 		</div>
 		<div>
 			<label>Password		<!--Insted of using for you can nest input element inside the label element-->
-			<input type="Password" name="pass" id="">
+			<input type="Password" name="pass" id="" required>
 			</label>
 		</div>
-		<button type="reset">Reset</button>
+		<div>
+			<label for="Bio">Bio</label>
+			<textarea id="Bio" name="Bio" placeholder="Write a brief of yourself"></textarea>
+		</div>
+		<input type="hidden" name="hidden" value="Hidden input">
+		<div>
+			<label for="File">Upload File</label>
+			<input type="file" name="File" id="File">
+		</div>
+		<div>
+			<label for="Telephone">Telephone</label>
+			<input type="tel" name="Telephone" id="Telephone">
+		</div>
+		<div>
+			<label for="URL">URL</label>
+			<input type="url" name="URL" id="URL">
+		</div>
+		<button type="RESET">Reset</button>
 		<button type="Submit">Submit</button>		<!--Here Submit type allows you to submit the form by hitting Enter key-->
 	</form>
 </body>
