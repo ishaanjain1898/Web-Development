@@ -1,0 +1,50 @@
+8 useful HTML tags
+
+1. <picture> 
+The <picture> tag is similar to <img>, the <picture> element provides flexibility by allowing multiple <source> elements for the same resource, which can adapt based on a media query or image type support. For example, it can supply WebP images to browsers that support the newer, smaller file size.
+
+2. <datalist>
+The <datalist> tag provides an autocomplete interface for <input> elements. Each list contains a set of <option> elements that have an associated value. When linked to an <input> using the “list” attribute, it can provide a drop-down list or even display suggestions as the user types.
+
+3. <dl> 
+This description list, or <dl> tag, element serves as a container for groups of defined terms. Inside, each term (<dt>) and definition (<dd>) are grouped together to form a glossary-like structure. While it applies basic formatting by default, semantic HTML benefits screen readers and other automated tools such as crawlers.
+
+4. <details> 
+Accordions are a common design pattern when lots of data needs to be shown at once, such as a questions page. By using the <details> element alongside <summary>, we can achieve the same effect without JavaScript. Clicking the summary will toggle the rest of the content.
+
+5. <dfn> 
+Complex terms or abbreviations often need defining for those that are not familiar. A term wrapped in a <dfn> tag will be defined by the text that surrounds it. This is an inline element and is designed to be used to highlight definitions in human language.
+
+6. <figure> 
+A figure is defined as a unit of content that often appears in the main flow of a document but can be also interpreted separately. The <figure> element wraps an image or other reference content and can also include a description of its contents with <figcaption>.
+
+7. <code> 
+With technical writing, it can be useful to visually separate computer code from the rest of the sentence. By wrapping each occurrence in a <code> tag, the browser can apply some default formatting to display it more appropriately. Combine with <pre> for larger code blocks.
+
+8. <time> 
+We can write time values differently depending on the context or the language. By marking these values with the <time> tag, search engines and other automated tooling can quickly extract this information. Use the “datetime” attribute to supply a specific time in a more machine-friendly format.
+
+
+
+
+5 HTML tags to avoid
+The HTML specification has a lot of legacy tags that can still be used, and will still work, but the simple fact is, there is usually a better alternative out there. And, if there is a better option then you really need to be using it. 
+
+There is also the issue of  browser support. Some tags will no longer be supported in every browser, but these can go unnoticed when looking at the design of a page. Again these need to be replaced. 
+
+Below you will find five tags that should definitely not be sitting inside the HTML of any page. If you spot any of these in your code make sure they are replaced with a more suitable tag or removed altogether.
+
+01. <font>
+Historically, the <font> tag was used to style a block of text, it’s now best to target and style text with CSS. According to Advanced Web Ranking, nearly 6.5 million websites still use the tag despite it being deprecated for many years.
+
+02. <menuitem> 
+When combined with <menu>, the <menuitem> tag would supply options and actions to perform inside context menus. This has now been removed from the specification as it did not receive much browser support.
+
+03. <big> 
+The <big> tag would have increased the size of the text inside the tag by one level. Its companion <small> is still valid HTML, but now has a more defined semantic meaning referring to small print.
+
+04. <center> 
+Previously the <center> tag was the only way to centralise both block and inline content, but it has now been replaced with “text-align: center” in CSS, which performs the same job. 
+
+05. <marquee> 
+The <marquee> tag allowed the text inside the tag to move across the screen like a news ticker. While previously a popular feature of the web it has been classed as obsolete in favour of CSS-based animations.
