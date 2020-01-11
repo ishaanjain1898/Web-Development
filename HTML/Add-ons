@@ -33,3 +33,7 @@ SVG: Scalable Vector Graphics are a relative new format used to display vector i
 the need to create bitmap version of them), however its use is not yet widespread.
 
 Block elements - adds <br> before and after themselfs.
+
+<Small> Tag :-
+This makes text one size small. If we put this tag "small" in "h1" the text still appears bigger
+than "h2" but smaller than "h1". (about 0.8)
