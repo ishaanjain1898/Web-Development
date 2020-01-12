@@ -5,9 +5,10 @@
 </head>
 <body>
 	<form action="" method="" enctype="multiple/form-data">
+		
 		<div>
-			<label for="name">User Name</label> 		<!--for: if you click on the label, it highlight the input element that label is for. Here value of for is id of desired input element -->
-			<input type="text" name="username" id="name" value="Username">		<!--value: to set a default value--> 
+			<label for="name" >User Name</label> 		<!--for: if you click on the label, it highlight the input element that label is for. Here value of for is id of desired input element -->
+			<input type="text" name="username" id="name" value="Username" disabled="">		<!--value: to set a default value--> 
 			<input type="text" name="name" placeholder="LastName" required> 		<!--placeholder: to give extra information to display inside input area-->
 		</div>
 		<div>
@@ -23,11 +24,13 @@
 			<input type="range" name="range" id="range" min="10" max="200" oninput="age.value=range.value">
 		</div>
 		<div>
-			<label for="age">Age</label>
+			<label for="age" title="Are You alive?">Age</label>
 			<input type="number" name="age" id="age" min="0" max="100" step="5">
 		</div>
+		<fieldset>
+			<legend>Date and Time details</legend>
 		<div>
-			<label for="date">Birthday</label>
+			<label for="date">Date</label>
 			<input type="date" name="date" id="date" min="2019-12-16">
 		</div>
 		<div>
@@ -43,9 +46,10 @@
 			<input type="Month" name="Month" id="Month">
 		</div>
 		<div>
-			<label for="dt">Time</label>
+			<label for="dt">Date and Time</label>
 			<input type="datetime-local" name="dt" id="dt">
 		</div>
+	</fieldset>
 		<div>
 			Favorite Food
 			<div>
@@ -70,7 +74,7 @@
 		</div>
 		<div>
 			<label for="eyeColor">Eye Color</label>
-			<select name="eyeColor" id="eyeColor">
+			<select name="eyeColor" id="eyeColor" >
 				<option value="Green">Green</option>
 				<option value="Red">Red</option>
 				<option value="Blue">Blue</option>
@@ -81,13 +85,21 @@
 		</div>
 		<div>
 			<label for="hairColor">Hair Color</label>
-			<select name="hairColor" id="hairColor" multiple>
+			<select name="hairColor" id="hairColor" multiple size="5">
 				<option value="Green">Green</option>
 				<option value="Red">Red</option>
 				<option value="Blue">Blue</option>
 				<option value="Black" >Black</option>
 				<option value="Brown">Brown</option>
+				<option value="Brunette">Brunette</option>
+				<option value="Ginger Red">Ginger Red</option>
+				<option value="Titian">Titian</option>
+				<option value="Blonde" >Blonde</option>
+				<option value="Golden">Golden</option>
+				<option value="Grey">Grey</option>
+				<option value="White">White</option>
 			</select>
+			(Hold "ctrl" key to select multiple options)
 			<div>
 				<input type="color" name="hairColor" id="color" oninput="result.value=color.value">
 				<input type="text" name="hairColor" id="result">
@@ -96,7 +108,7 @@
 		
 		<div>
 			<label for="Bio">Bio</label>
-			<textarea id="Bio" name="Bio" placeholder="Write a brief of yourself"></textarea>
+			<textarea id="Bio" name="Bio" placeholder="Write a brief of yourself" rows="5" cols="25"></textarea>
 		</div>
 		<input type="hidden" name="hidden" value="Hidden input">
 		<div>
@@ -114,7 +126,11 @@
 		<button type="RESET" value="Make it reset">Reset entries</button>
 		<button type="Submit" value="Submit">Submit form</button>		<!--Here Submit type allows you to submit the form by hitting Enter key-->
 		<input type="button" name="Submit" value="Value=Submit">
-		<button onclick="alert('Thank You to fill this form')">Thank You</button>
+		<button onclick="alert('Thank You to fill this form')"><img src="https://www.seniorsalmon.com/wp-content/uploads/thank-you.png" alt="Thank You" width="100" height="30"></button>
+		<div>
+			<input type="search" name="search" id="search">
+			<button form="search">Search</button>
+		</div>
 	</form>
 </body>
 </html>
