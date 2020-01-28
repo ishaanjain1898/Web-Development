@@ -9,7 +9,9 @@ JavaScript
 
 
 Identifier 
-The rules for creating an identifier in JavaScript are, the name of the identifier should not be any pre-defined keyword, the first character must be a letter, an underscore (_), or a dollar sign ($). Subsequent characters may be any letter or digit or an underscore or dollar sign. Variable are case sensitive.
+The rules for creating an identifier in JavaScript are, the name of the identifier should not be any pre-defined keyword, 
+the first character must be a letter, an underscore (_), or a dollar sign ($). Subsequent characters may be any letter or digit 
+or an underscore or dollar sign. Variable are case sensitive.
 
 
 
