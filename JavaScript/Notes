@@ -1,0 +1,23 @@
+JavaScript
+
+•	JavaScript follow document object model
+
+
+	JS is a loosely typed programming language
+	JS is a dynamically typed scripting language
+
+
+
+Identifier 
+The rules for creating an identifier in JavaScript are, the name of the identifier should not be any pre-defined keyword, the first character must be a letter, an underscore (_), or a dollar sign ($). Subsequent characters may be any letter or digit or an underscore or dollar sign. Variable are case sensitive.
+
+
+
+Switch case – In JavaScript we use numbers, strings, Boolean value and more
+
+Eg.	var name=Ishaan
+	Switch (name+ “Jain”)
+	{
+		case Ishaan Jain: document.write(“True”);
+		break;
+	}
