@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>value</title>
+	<script type="text/javascript">
+		function check () {
+			var un = document.getElementById("un").value;
+			var pass=document.getElementById("pass").value;
+			if (un==pass)
+				alert("You cannot enter same username and password");
+		}
+	</script>
+</head>
+<body>
+	<input type="text" id="un" name="username" placeholder="username">
+	<input type="password" id="pass" name="password" placeholder="password">
+	<button onclick="check()">Check</button>
+</body>
+</html>
