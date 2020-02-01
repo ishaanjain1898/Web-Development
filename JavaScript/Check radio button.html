@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Check Radio Button</title>
+	<script type="text/javascript">
+		function ch() {
+			console.log('hi')
+			var rd1=document.getElementById("rd1");
+			var rd2=document.getElementById("rd2");
+			if (rd1.checked==true)
+				alert("Welcome "+rd1.value);
+			else if(rd2.checked==true)
+				alert("Welcome "+rd2.value);
+			else
+				alert("Please select your profile");
+		}
+	</script>
+</head>
+<body>
+	<form>
+		<div>
+			<label>
+				<input type="radio" name="Developer" id="rd1" value="Web Developer">Web Developer
+			</label>
+			<label>
+				<input type="radio" name="Developer" id="rd2" value="Software Developer">Software Developer
+			</label>
+			<button onclick="ch()">Check</button>
+		</div>
+
+	</form>
+</body>
+</html>
