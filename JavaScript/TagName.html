@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TagName</title>
+	<script type="text/javascript">
+		function TagName(){
+			var para = document.getElementsByTagName("p");	//its an array of 5 elements
+			para[0].style.fontSize = 'x-large';
+			para[1].style.color="red";
+			para[2].style.fontFamily = 'arial';
+			para[3].style.fontWeight = 'bold';
+			para[4].style.fontStyle = 'italic';
+
+			for (i=5;i<para.length;i++){
+				para[i].style.color="orange";
+			}
+
+		}
+	</script>
+</head>
+<body>
+	<p>Change my size</p>
+	<p>Change my color</p>
+	<p>Change my font</p>
+	<p>Make me bold</p>
+	<p>Male me italic</p>
+	<button onclick="TagName()">Style</button>
+	<br><br><br>
+	<p>Style us also</p>
+	<p>Style us also</p>
+	<p>Style us also</p>
+	<p>Style us also</p>
+	<p>Style us also</p>
+	<p>Style us also</p>
+	<p>Style us also</p>
+	<p>Style us also</p>
+	<p>Style us also</p>
+	<p>Style us also</p>
+
+
+
+</body>
+</html>
