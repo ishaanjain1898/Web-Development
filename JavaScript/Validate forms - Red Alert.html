@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Red alert</title>
+	<script type="text/javascript">
+		function redAlert () {
+			var un=document.getElementById("uname");
+			var pass=document.getElementById("pass");
+
+			if(un.value.trim()==""){
+				uname.style.border = "solid 3px red";
+				document.getElementById("vis").style.visibility = "visible";
+				return false;
+			}
+			else if (pass.value.trim()=="") {
+				uname.style.border = "";
+				document.getElementById("vis").style.visibility = "hidden";
+				pass.style.border = "solid 3px red";
+				document.getElementById("pas").style.visibility = "visible";
+				return false;
+			}
+			else if (pass.value.trim().length<5) {
+				uname.style.border = "";
+				document.getElementById("vis").style.visibility = "hidden";
+
+				pasimg.title="Password must contain more than 5 characters";
+				document.getElementById("pas").style.visibility = "visible";
+				alert("Password must contain more than 5 characters");
+				return false;
+				
+			}
+			else{
+				return true;
+			}
+		}
+
+	</script>
+</head>
+<body>
+	<form onsubmit="return redAlert()" action="#">
+		<input type="text" name="uname" placeholder="username" id="uname">
+		<label id="vis" style="color: red; visibility: hidden;" >Invalid <img src="q.png" width="15" height="15" title="username cannot left blank"> </label> <br>
+		<input type="password" name="pass" id="pass" placeholder="password"> 
+		<label id="pas" style="color: red; visibility: hidden;" >Invalid <img src="q.png" id="pasimg" width="15" height="15" title="password cannot left blank"> </label>
+		<br><br>
+		<input type="submit" name="submit">
+
+	</form>
+</body>
+</html>
