@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ClassName</title>
+	<script type="text/javascript">
+		function Classname () {
+			var nc = document.getElementsByClassName("cn");
+			nc[0].style.color="red";
+			nc[1].style.color="magenta";
+			nc[2].style.color="green";
+			nc[3].style.color="blue";
+
+		}
+	</script>
+</head>
+<body>
+	<p class="cn">Style me</p>
+	<p>Don't style me</p>
+	<p class="cn">Style me</p>
+	<a href="#" class="cn">Style me</a>
+	<div class="cn">Style me</div>
+	<button class="cn" onclick="Classname()">Click me to style</button>
+</body>
+</html>
